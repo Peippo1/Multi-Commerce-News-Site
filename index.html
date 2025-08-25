@@ -1,97 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Brand & Circularity News Digest</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: sans-serif;
-            background: #f9f9f9;
-            margin: 0;
-        }
-
-        .container {
-            max-width: 700px;
-            margin: 2em auto;
-            background: #fff;
-            padding: 2em;
-            border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        h2 {
-            color: #1a3d4c;
-        }
-
-        .article {
-            margin-bottom: 2em;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 1em;
-        }
-
-        .title {
-            font-size: 1.15em;
-            font-weight: bold;
-            margin-bottom: 0.2em;
-        }
-
-        .meta {
-            color: #777;
-            font-size: 0.95em;
-            margin-bottom: 0.4em;
-        }
-
-        .summary {
-            color: #222;
-        }
-
-        .footer {
-            font-size: 0.9em;
-            color: #999;
-            margin-top: 2em;
-            text-align: center;
-        }
-
-        a {
-            color: #1976d2;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Brand & Circularity News Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; background: #f9f9f9; margin: 0; }
+    .container { max-width: 700px; margin: 2em auto; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.05);}
+    h2 { color: #1a3d4c; }
+    .article { margin-bottom: 2em; border-bottom: 1px solid #eee; padding-bottom: 1em; }
+    .title { font-size: 1.15em; font-weight: bold; margin-bottom: 0.2em; }
+    .meta { color: #777; font-size: 0.95em; margin-bottom: 0.4em; }
+    .summary { color: #222; }
+    .footer { font-size: 0.9em; color: #999; margin-top: 2em; text-align: center;}
+    a { color: #1976d2; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <h2>📰 Brand & Circularity News Digest</h2>
-
-        <!-- Repeat this block for each article -->
-        <div class="article">
-            <a href="https://example.com/article-1" class="title" target="_blank" rel="noopener">
-                Example News Title Goes Here
-            </a>
-            <div class="meta">
-                Example Publisher — 2025-08-25
-            </div>
-            <div class="summary">
-                This is a short summary of the article or key insights.
-            </div>
-        </div>
-
-        <!-- Add more articles here, dynamically if using n8n -->
-
-        <div class="footer">
-            Powered by n8n, OpenAI, and Perplexity &bull; <span id="date"></span>
-        </div>
+  <div class="container">
+    <h2>📰 Brand & Circularity News Digest</h2>
+    
+    <!-- Repeat this block for each article -->
+    <div class="article">
+      <a href="https://example.com/article-1" class="title" target="_blank">
+        Example News Title Goes Here
+      </a>
+      <div class="meta">
+        Example Publisher — 2025-08-25
+      </div>
+      <div class="summary">
+        This is a short summary of the article or key insights.
+      </div>
     </div>
-    <script>
-        // Optional: update the date automatically
-        document.getElementById('date').textContent = new Date().toLocaleString();
-    </script>
+    
+    <!-- Add more articles here, dynamically if using n8n -->
+    
+    <div class="footer">
+      Powered by n8n, OpenAI, and Perplexity &bull; <span id="date"></span>
+    </div>
+  </div>
+  <script>
+    // Optional: update the date automatically
+    document.getElementById('date').textContent = new Date().toLocaleString();
+  </script>
 </body>
-
 </html>
